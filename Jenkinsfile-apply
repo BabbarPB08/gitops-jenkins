@@ -7,7 +7,7 @@ pipeline {
   }
   agent {
     node {
-      label 'nodejs'
+      label 'maven'
     }
   }
   stages {
@@ -32,7 +32,7 @@ pipeline {
       steps {
         sh 'oc login -u kubeadmin -p gwDUy-FsWUw-m8WAt-kAncX --insecure-skip-tls-verify \
 https://kubernetes.default.svc:443'
-        sh 'oc new-project test-testuser || true'
+        sh 'oc new-project test-babbar || true'
       }
     }
   }
