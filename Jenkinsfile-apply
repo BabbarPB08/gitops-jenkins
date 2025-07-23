@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage ('Validate configuration resources') {
       steps {
-        sh 'oc login -u kubeadmin -p gwDUy-FsWUw-m8WAt-kAncX --insecure-skip-tls-verify \
+        sh 'oc login -u kubeadmin -p rmk73-6K4pR-C8ERE-59pmL --insecure-skip-tls-verify \
 https://kubernetes.default.svc:443'
         sh 'oc new-project test-babbar || true'
       }
